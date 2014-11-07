@@ -1,7 +1,7 @@
 #!/usr/local/bin/php
 <?php
 /**
-* $Id: example-wrapper.php 20 2008-05-06 10:41:26Z don.schonknecht $
+* $Id$
 *
 * Note: Although this wrapper works, it would be more efficient to use the S3 class instead
 */
