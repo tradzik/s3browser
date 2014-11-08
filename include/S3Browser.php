@@ -53,7 +53,9 @@ class S3Browser {
         $tree = $tree[$part]['files'];
       }
     }
-    
+    if(isset($tree['.no_index'])){
+      return array();
+    };
     uasort($tree, array($this, 'sort'));
     return $tree;
   }
