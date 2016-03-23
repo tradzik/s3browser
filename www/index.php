@@ -14,11 +14,6 @@ if (!$config['bucket-name'] || !$config['s3-access-key'] ||
   die('Please set bucket-name, s3-access-key, and s3-secret-key in'.
       ' config.php');
 }
-if (!$config['bucket-name'] || !$config['s3-access-key'] ||
-    !$config['s3-secret-key']) {
-  die('Please set bucket-name, s3-access-key, and s3-secret-key in'.
-      ' config.php');
-}
 if (!$config['endPoint']){
     $config['endPoint'] = 's3.amazonaws.com';
 }
@@ -40,3 +35,5 @@ if ($files === null) {
 }
 
 include ROOT_DIR.'/themes/'.$config['theme'].'/index.tpl.php';
+
+?>
